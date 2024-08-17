@@ -1,5 +1,7 @@
 import pytest
+
 from src.pytemplate.domain.models import Operands
+
 
 def test_operands_initialization():
     operands = Operands(first_operand=5, second_operand=10)
