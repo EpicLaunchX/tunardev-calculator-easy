@@ -24,13 +24,13 @@ def test_multiply():
     assert result == 1575
 
 
-def test_divide_by_zero():
-    operands = operands_factory(45, 0)
-    with pytest.raises(ValueError, match="Cannot divide by zero"):
-        calculator.divide(operands)
-
-
 def test_divide():
     operands = operands_factory(45, 5)
     result = calculator.divide(operands)
     assert result == 9
+
+
+def test_divide_by_zero():
+    operands = operands_factory(45, 0)
+    with pytest.raises(ValueError, match="Cannot divide by zero"):
+        calculator.divide(operands)
