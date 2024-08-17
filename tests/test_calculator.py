@@ -12,16 +12,16 @@ def test_add():
     assert result == 80
 
 
-def test_subtract():
-    operands = operands_factory(45, 35)
-    result = calculator.subtract(operands)
-    assert result == 10
-
-
 def test_multiply():
     operands = operands_factory(45, 35)
     result = calculator.multiply(operands)
     assert result == 1575
+
+
+def test_subtract():
+    operands = operands_factory(45, 35)
+    result = calculator.subtract(operands)
+    assert result == 10
 
 
 def test_divide():
